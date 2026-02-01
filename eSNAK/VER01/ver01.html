@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Snake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="had.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="score-board">
+            <span>Skóre: <span id="score">0</span></span>
+            <span>Nejvyšší: <span id="highScore">0</span></span>
+        </div>
+        
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            
+            <div id="startScreen" class="overlay">
+                <h1>NEON SNAKE</h1>
+                <p>Použij šipky nebo WASD k pohybu</p>
+                <button id="startBtn" class="btn">START</button>
+            </div>
+            <div id="gameOverScreen" class="overlay hidden">
+                <h1>KONEC HRY</h1>
+                <p>Tvé skóre: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="btn">ZKUSIT ZNOVU</button>
+            </div>
+        </div>
+    </div>
+    <script src="had.js"></script>
+</body>
+</html> 
